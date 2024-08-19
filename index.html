@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de CEP</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+        max-width: 400px;
+      }
+      #loader {
+        display: none;
+      }
+      #resultado {
+        margin-top: 20px;
+      }
+      .erro {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="cep">Digite o CEP:</label>
+    <input type="text" id="cep" maxlength="8" />
+    <button id="consultar">Consultar</button>
+    <div id="loader">Carregando...</div>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
